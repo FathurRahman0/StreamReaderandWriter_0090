@@ -28,4 +28,11 @@ int main(){
         // menulis dan memasukkan nilai dari 'baris' ke dalam file
         outfile << baris << endl;
     }
+    //selesai dalam menulis sekarang tutup filenya
+    outfile.close();
+    //Membuka File dalam mode baca
+    ifstream infile;
+    // menunjukkan ke sebuah file
+    infile.open(NamaFile,ios::in);
+
 }
